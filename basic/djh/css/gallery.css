@@ -1,0 +1,233 @@
+main{
+	background-color: #eee;
+	padding: 1.25rem 6.25rem 30rem 5rem;
+}
+
+/* aside部分 */
+aside{
+	float: right;
+	width: 300px;
+}
+.search{
+	height: 50px;
+	margin-bottom: 1em;
+	padding: 0.5em 1em;
+	background: #fff;
+}
+.search-box{
+	border: 1px solid #eee;
+	position: relative;
+	height: 100%;
+}
+.icon-search{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 100%;
+	background: url(../image/icon-search.svg) no-repeat;
+	background-size: cover;
+}
+.search input {
+	display: block;
+	padding: 0.5em;
+	padding-left: 2.5em;
+	padding-right: 3.5em;
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.search-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+	width: 40px;
+	height: 100%;
+	color: #fff;
+}
+
+.search-btn:hover {
+	cursor: pointer;
+}
+.rank{
+	padding: 1em;
+	background: #fff;
+}
+.rank h3{
+	margin: 1em 0;
+}
+.rank li{
+	line-height: 25px;
+}
+.rank i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #522a5c;
+}
+.rank-bar{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 25px;
+	border: 1px solid #ccc;
+
+}
+.rank-bar div{
+	background: #522a5c;
+	position: absolute;
+	height: 100%;
+}
+.rank1{
+	width: 100%;
+}
+.rank2{
+	width: 90%;
+}
+.rank3{
+	width: 70%;
+}
+.rank4{
+	width: 40%;
+}
+.rank5{
+	width: 20%;
+}
+
+
+
+
+.page{
+	margin-right: 316px;
+}
+
+.switch-btn-list { font-size: 0; }
+
+.switch-btn {
+	display: inline-block;
+	padding: 0.5em;
+	margin-left: -1px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-top-width: 3px;
+	text-align: center;
+	font-size: 16px;
+	background: #fff;
+	cursor: pointer;
+}
+.switch-btn-1{
+	border-left: 0;
+	border-top-color: #522a5c;
+}
+.switch-btn-2{
+	border-top-color: #dfc6e6;
+}
+.switch-btn-3{
+	border-top-color: #dfc6e6;
+}
+.switch-btn-4{
+	border-top-color: #d2a6ff;
+}
+.switch-btn-5{
+	border-top-color: #ffe188;
+}
+.tab-content{
+	padding: 1em;
+	column-count: 3;
+	min-height: 200px;
+	background: #fff;
+}
+.btn-active{
+	border-bottom: 0;
+}
+.tab { display: none; }
+.btn-active { border-bottom: 0; }
+.tab-active { display: block; }
+
+.card{
+	margin: 0.5em;
+	color: #fff;
+	-webkit-column-break-inside: avoid;
+}
+.card img{
+	width: 100%;
+	height: 100%;
+}
+.card-info{
+	padding: 0.5em;
+
+}
+.card-info span{
+	float: left;
+	display: inline-block;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid #fff;
+
+}
+.card-info div{
+	margin-left: 35px;
+}
+.item1{
+	background: #522a5c;
+}
+.item2{
+	background: #5900b2;
+}
+.item3{
+	background: #d9a300;
+}
+.item4{
+	background: #8c2300;
+}
+.loading{
+	margin-top: 1em;
+	padding: 1em;
+	background: #fff;
+	text-align: center;
+}
+.loading a{
+	color: #000;
+}
+.icon-load img{
+	width: 16px;
+	height: 100%;
+}
+
+
+/* 媒体查询设置移动端样式 */
+@media only screen and (max-width: 768px){
+	aside{
+		float: none;
+		width: 100%;
+	}
+	.rank{
+		display: none;
+	}
+	.page{
+		width: 100%;
+		margin-right: 0;
+	}
+	.switch-btn {
+		word-break: break-all;
+	}
+}
+@media only screen and (min-width: 1366px) {
+	.tab-content { column-count: 4; }
+}
+
+@media only screen and (max-width: 680px) {
+	.tab-content { column-count: 2; }
+}
+
+@media only screen and (max-width: 376px) {
+	.tab-content { column-count: 1; }
+}
+

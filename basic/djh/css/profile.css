@@ -1,0 +1,88 @@
+.info{
+	background: #eee;
+	padding: 4em 4em 3em 4em;
+}
+.info-container{
+	text-align: center;
+	background: #fff;
+	position: relative;
+	padding-bottom: 20em;
+}
+
+.line{
+	position: absolute;
+	width: 6px;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+	background: #eee;
+	z-index: 1;
+}
+.info-content{
+	z-index: 999;
+	position: relative;
+}
+.info-content img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid #eee;
+}
+img.avator{
+	transform: translateY(-30%);
+}
+.info-name{
+	text-indent: 2em;
+}
+.info-content > dl{
+	margin: 2em 0;
+	position: relative;
+	left: 50%;
+	width: 50%;
+
+}
+dt{
+	width: 4em;
+	left: 0;
+	position: absolute;
+	transform: translateX(-200%);
+}
+dd{
+	margin: 1em 0 1em 3em;
+	width: 60%;
+	text-align: left;
+}
+img.phone,
+img.college,
+img.company{
+	width: 75px;
+	height: 75px;
+}
+.time-year ~ dd{
+	margin-left: 0;
+}
+.time-year{
+	position: absolute;
+	left: 0;
+	border: 4px solid #eee;
+	border-radius: 5px;
+	background: #fff;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+
+main{
+	background-color: #eee;
+	padding: 1.25rem 6.25rem 30rem 5rem;
+}
+
+/* 媒体查询设置移动端样式 */
+@media only screen and (max-width: 768px){
+	img.avator{
+		width: 100px;
+		height: 100px;
+	}
+}
+

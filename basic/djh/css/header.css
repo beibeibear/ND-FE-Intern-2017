@@ -1,0 +1,80 @@
+header{
+	position: relative;
+	height: 80px;
+	background: #522a5c;
+}
+.logo{
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	padding: 5px;
+	width: 80px;
+	text-align: center;
+}
+.icon-github{
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+.h-menu{
+	display: none;
+}
+.h-nav{
+	position: absolute;
+	right: 100px;
+	bottom: 10px;
+}
+.h-nav li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.h-nav .showMenu{
+	display: block;
+	
+}
+.h-nav .hideMenu{
+	display: none;
+}
+
+@media only screen and (max-width: 768px){
+	header{
+		height: 40px;
+	}
+	.h-menu{
+		display: inline-block;
+		margin: 2px;
+	}
+	.h-nav{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 40%;
+		height: 170px;
+		z-index: 999;
+	}
+	.h-nav ul {
+		display: none;
+	}
+	.h-nav li{
+		display: block;
+		margin: 0;
+		border-bottom: 1px solid #fff;
+		background: black;
+		line-height: 40px;
+		text-align: center;
+	}
+	.icon-github{
+		display: none;
+	}
+	.banner{
+		height: 260px;
+	}
+	.bg-info {
+		position: static;
+		width: 100%;
+		height: 100%;
+	}
+	.bg-info h3 { 
+		text-align: left; 
+	}
+}

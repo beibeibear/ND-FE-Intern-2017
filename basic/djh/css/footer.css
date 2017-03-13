@@ -1,0 +1,50 @@
+footer{
+	background-color: black;
+}
+.f-nav{
+	text-align: center;
+	border-bottom: 1px solid #333;
+}
+.f-nav li{
+	display: inline-block;
+	margin: 5px 10px;
+}
+.link-lists{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 30px 100px;
+}
+.f-link{
+	width: 20%;
+
+}
+.f-link ul{
+	margin-top: 25px;
+}
+.f-link li{
+	line-height: 1.4em;
+}
+.copyright{
+	text-align: center;
+}
+.copyright span{
+	display: inline-block;
+	margin-top: 2em;
+}
+.copyright a{
+	display: block;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px){
+	.link-lists{
+		padding: 10px;
+	}
+	.f-link{
+		width: 100%;
+	}
+	.f-link li{
+		display: inline-block;
+	}
+}
